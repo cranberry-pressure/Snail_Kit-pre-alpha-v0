@@ -1,1 +1,1 @@
-# Snail Party Pre Alpha v0
+# Snail Project Pre Alpha v0
