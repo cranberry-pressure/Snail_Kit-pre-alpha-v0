@@ -1,0 +1,97 @@
+<!DOCTYPE>
+
+<!--
+The MIT License (MIT)
+ 
+ Copyright 2021, 2022 Jimmy Débé
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and 
+associated documentation files (the "Software"), to deal in the Software without restriction, including without 
+limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, 
+and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR 
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="first.css" media= "screen"/>
+        <script type="text/javascript" src="./main.js"></script>
+    </head>
+       
+    <body>
+        <div class="main-row">
+    
+            <div class="side"> <div class="navlogo" ></div>
+                <button class="link" id= "manageBtn"><b>Manage</b></button>
+                <button class="link" id = "clusterBtn" ><b>Clusters</b></button>
+                <button class="link" id ="statusBtn"><b>Status</b></button>
+                <button class="link" id = "settingsBtn"><b>Settings</b></button>
+                
+            </div>
+            <div class="main"> 
+                <p style="font-family:Cambria; font-size:50pt; margin-top:0; color:#719769;"><b>new cluster</b></p>
+                <div style="" id ="display-area" > </div>
+                   
+                <div class="create-grid">
+                    <p><b>Add New Cluster</b></p>
+                    Name
+                    <input type="text" id="aName">
+                    Address <input type="text" id="addrs">
+                    <p></p>
+                    <button id = "add" style="min-width:400px; font-size:40pt;"><b>Add </b></button>
+                    <p></p>
+                    <div id="detail-areaA"> </div>
+                </div>
+                    <p></p>
+                    <div class="create-grid">
+                        <p><b>Create New Cluster</b></p>
+                        Name:  
+                        <input type="text" id="cName">
+                        
+                        <form name="clusFo">
+                            
+                            <input type="radio" name="Pri" value="raft"/> Private<br>
+                            <input type="radio" name="Pri" value="crdt"/> Public<br>
+                            
+                        </form>
+                        
+                        
+                        <p>Authourized Publishers</p>
+                        
+                    
+                        <button id="create" style="min-width:400px; font-size:40pt;"><b>Create</b></button>
+                        <p></p>
+                        <div id="detail-areaB"> </div>
+                    </div>    
+                    
+                
+                
+                
+                <div>
+                    <p></p>
+                    
+                </div>
+                
+
+
+                
+            </div>
+            
+  
+    
+        </div>
+    
+    </body>
+    
+
+
+
+</html>

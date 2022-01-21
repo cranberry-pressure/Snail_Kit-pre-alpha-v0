@@ -1,0 +1,119 @@
+<!DOCTYPE>
+<!--
+The MIT License (MIT)
+ 
+ Copyright 2021, 2022 Jimmy Débé
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and 
+associated documentation files (the "Software"), to deal in the Software without restriction, including without 
+limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, 
+and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR 
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+-->
+
+<html>
+<head>
+ <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="first.css" media= "screen"/> 
+<!--<script type="text/javascript" src="./main.js"></script>-->
+
+
+</head>
+<body>
+    
+    <div class="main-row">
+    
+        <div class="side"> <div class="navlogo" ></div>
+                <button class="link" id= "manageBtn"><b>Manage</b></button>
+                <button class="link" id = "clusterBtn" ><b>Clusters</b></button>
+                <button class="link" id ="statusBtn"><b>Status</b></button>
+                <button class="link" id = "settingsBtn"><b>Settings</b></button>
+                
+            </div>
+        <div class="main" id="soon">
+            <p style="font-family:Cambria; font-size:50pt; margin-top:0; margin-bottom:20px; color:#719769;"><b>manage</b></p>
+             <div style="" id ="display-area"> </div>
+            
+            <div class="file-row" id="scob" style="margin-top:120px;">
+                <!-- selectN(this.id)-->
+                <div onclick = 'dirN(id)' class= "file-col" id="f1"  >
+                         
+                        <div class= "file-data" >
+                            <div class="dataz" style="font-size:20pt">
+                                <b>Name:</b> 
+                                <b id="resAddr" style ="font-size:15pt;">null</b>
+                            </div>
+                            
+                            <div class="dataz">
+                                <b>Address:</b>
+                                <info>0x0000000000000000</info>
+                            </div>
+                            
+                        </div>
+                        <div class="file-data" style="flex-direction:column;"> 
+                            <div id ="resSize" class="dataz" style ="font-size:15pt">
+                                Size:
+                                <info>n/a</info>
+                            </div>
+                            <div id="resType" class="dataz" style ="font-size:15pt">
+                                Type:
+                                <info>n/a</info>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                
+                
+               
+                  
+                
+                
+                 
+            </div>
+            <div  class="bottom" id ="newsd"> 
+                
+                <input type="text" id ="foldNew" style="display:none">
+                    <div id ="jlakd">
+
+                        <button id ="moving">Move</button>
+                        <button id ="chooses" style = "display:none;">Choose Folder</button>
+                        <button id = "rmPin">Remove</button>
+                        <button id = "mwF">New Folder</button>
+                        <button id ="foldCre" style = "display:none;">Create</button>
+                        <button id = "viewF">View File </button>
+                        <!--<button style="display:block;" onclick="document.getElementById('addF').click()" >Add File</button>
+                        -->
+                        
+                        <button id = "addFbtn" >Add File</button>
+                        <input type="file" id="addF" style="display:none" accept=".json">
+
+                        <button id = "cancel" style= "display:">Cancel</button>
+                        <button>Select All/ #Selected</button>
+
+                    </div>
+                    
+                    
+                </div>
+             
+           
+        
+        
+        </div>
+    
+    
+    </div>
+    
+    
+    
+</body>
+</html>
+   
+        

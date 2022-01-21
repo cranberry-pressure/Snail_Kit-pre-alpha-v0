@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+The MIT License (MIT)
+ 
+ Copyright 2021, 2022 Jimmy Débé
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and 
+associated documentation files (the "Software"), to deal in the Software without restriction, including without 
+limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, 
+and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR 
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="first.css" media= "screen"/>
+        
+        <script type="text/javascript" src="./status.js"></script>
+    </head>
+
+    <body>
+        
+        <div class="main-row">
+    
+            <div class="side"> <div class="navlogo" ></div>
+                <button class="link" id= "manageBtn"><b>Manage</b></button>
+                <button class="link" id = "clusterBtn" ><b>Clusters</b></button>
+                <button class="link" id ="statusBtn"><b>Status</b></button>
+                <button class="link" id = "settingsBtn"><b>Settings</b></button>
+                
+            </div>
+            
+            <div class="main">
+                <h1><p style="font-family:Cambria; font-size:50pt; margin-top:0; ; color:#719769;"><b>status</b> </p></h1>
+                
+                    <div class="manage-node">
+                        
+                        <div>IPFS ID:
+                            <info></info>
+                        </div>
+                        <div>IPFS Version:
+                            <info></info>
+                        </div>
+                        <div>
+                            <p>Available Memory:<info></info></p>
+                            <p>Available Storage:<info></info></p>
+                        </div>
+                </div>
+               
+                <div class="stats-back"> 
+                    <div>
+                        <div class ="stats-header"><b>Repo Info</b> <b>i</b></div>
+                        <p>number of objects: <info></info></p>
+                        <p>repo path:<info></info></p>
+                        <p>repo size:<info></info></p>
+                        <p>repo storage max:<info></info></p>
+                        
+                    </div>
+                    <div>
+                        <div class="stats-header"><b>Bandwidth Info</b></div>
+                        <p>total in:<info></info></p>
+                        <p>total out:<info></info></p>
+                        <p>rate in:<info></info></p>
+                        <p>rate out: <info></info></p>
+                        
+                    </div>
+                    <div>
+                        <div class="stats-header"><b>Bitswap Stats</b></div>
+                        
+                        <p>provides buffer:<info></info> /256</p>
+                        <p>blocks receieved:<info></info></p>
+                        <p>data receieved:<info></info></p>
+                        <p>data sent:<info></info></p>
+                        <p>blocks sent:<info></info></p>
+                        <p>duplicate blocks received:<info></info></p>
+                        <p>duplicate data received:<info>dfdf</info></p>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </body>
+    
+</html>
