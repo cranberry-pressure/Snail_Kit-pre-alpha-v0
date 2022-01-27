@@ -133,7 +133,7 @@ static int callback(void *noused, int argc, char **argv, char **col){
     }
     
     for(int i = 0; i < argc; i++){
-        //std::cout <<  col[i] << argv[i] << std::endl;
+
         if(call){
             sn.startClus(argv[i]);
             //insert running cluster
